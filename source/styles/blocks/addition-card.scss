@@ -3,7 +3,6 @@
   grid-template-areas: "title" "properties" "button";
   gap: 14px;
   padding: 13px 0 18px;
-
   border-bottom: 1px solid #cdcdcd;
 
   &:first-child {
@@ -20,7 +19,6 @@
 
 .addition-card__title {
   margin: 0;
-
   font: inherit;
 }
 
@@ -31,7 +29,6 @@
   grid-template-columns: 2fr 1fr;
   row-gap: 10px;
   margin: 0;
-
   line-height: 14px;
 }
 
@@ -66,7 +63,6 @@
     grid-template-columns: auto auto;
     justify-content: end;
     gap: 10px 50px;
-
     font-size: 16px;
     line-height: 20px;
   }
