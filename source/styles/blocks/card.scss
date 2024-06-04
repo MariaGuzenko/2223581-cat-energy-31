@@ -14,14 +14,14 @@
   display: block;
   grid-area: img;
   align-self: start;
-}
 
-&:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-&:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card__image {
@@ -91,7 +91,7 @@
   background-position: top center;
 }
 
-.card__description {
+.card__addition {
   grid-area: description;
   margin: 0;
   font-size: 12px;
@@ -147,7 +147,7 @@
     border-bottom: 1px solid #cdcdcd;
   }
 
-  .card__description {
+  .card__addition {
     margin: 0;
     font-size: 16px;
     line-height: 18px;
@@ -174,7 +174,7 @@
     background-size: 60px 60px;
   }
 
-  .card--show-more .card__description {
+  .card--show-more .card__addition {
     max-width: 170px;
     text-align: center;
     align-self: center;
