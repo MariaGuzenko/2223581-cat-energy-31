@@ -4,29 +4,38 @@
 }
 
 .advantage {
-  padding: 10px 20px 49px;
+  padding: 12px 20px 49px;
 }
 
 .advantage__title {
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
+  padding: 0;
 
   @include font($secondary-font, 36px, 40px, 400, none, $title-color-text);
 }
 
 .advantage__list {
-  display: flex;
-  flex-direction: column;
+  color: inherit;
+  counter-reset: list;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
   gap: 20px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+
+  @include font($secondary-font, 14px, 18px, 400, none, $title-color-text);
 }
 
 .advantage__item {
-  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  display: flex;
+  position: relative;
 
   &::before {
     content: "";
@@ -37,7 +46,7 @@
 
     background-color: #68b738;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50%;
   }
 }
 
@@ -62,34 +71,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantage__wrapper {
+    max-width: 768px;
+  }
+
   .advantage {
-    padding: 15px 30px 47px;
-    font-size: 16px;
-    line-height: 24px;
     border-bottom: 1px solid #e6e6e6;
+    padding: 0 30px 57px;
   }
 
   .advantage__title {
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .advantage__list {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 37px 153px;
-    counter-reset: item-counter;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    gap: 100px 115px;
+    margin-bottom: 47px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .advantage__item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 31px;
-    position: relative;
-    padding: 40px 0 57px;
-    max-width: 247px;
-    text-wrap: pretty;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0;
+    max-width: 269px;
+    min-height: 215px;
+    padding-right: 20px;
 
     &::before {
       width: 80px;
