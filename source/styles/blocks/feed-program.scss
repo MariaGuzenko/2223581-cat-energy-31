@@ -28,12 +28,13 @@
 
 @media (min-width: $desktop-width) {
   .feed-program__wrapper {
-    padding: 82px 110px 40px;
+    max-width: 1220px;
+    padding: 82px 0 0;
   }
 
   .feed-program__list {
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: row;
     gap: 80px;
+    padding: 0;
   }
 }

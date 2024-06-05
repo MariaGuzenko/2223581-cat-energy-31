@@ -34,6 +34,13 @@
   background-repeat: no-repeat;
   background-size: 320px 362px;
   background-position: center;
+  border: none;
+}
+
+.map__yandex {
+  border: none;
+  width: 100%;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,11 +70,14 @@
         url("../../images/map-tablet@2x.jpg") type("image/jpg") 2x);
     background-size: $tablet-width 400px;
   }
+
+  .map__yandex {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .location {
-    position: relative;
     display: grid;
     grid-template-columns: calc(50% - 45px) 45px 50%;
     grid-template-rows: 95px auto 106px;
