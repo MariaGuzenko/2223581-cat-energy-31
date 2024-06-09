@@ -25,8 +25,6 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-
-  @include font($secondary-font, 14px, 18px, 400, none, $title-color-text);
 }
 
 .advantage__item {
@@ -113,8 +111,8 @@
       z-index: -1;
       left: 113px;
       top: 0;
-      content: counter(item-counter);
-      counter-increment: item-counter;
+      content: counter(list);
+      counter-increment: list;
 
       @include font($secondary-font, 280px, 280px, 400, none, $soft-background-color);
     }
@@ -128,7 +126,7 @@
 
   .advantage {
     border: none;
-    padding: 71px 0 16px;
+    padding: 71px 0 0;
   }
 
   .advantage__list {
@@ -137,7 +135,7 @@
 
   .advantage__item {
     width: 246px;
-    padding-top: 29px;
+    padding-top: 31px;
     padding-right: 0;
     display: block;
 
