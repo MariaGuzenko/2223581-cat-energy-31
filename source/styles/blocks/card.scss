@@ -126,7 +126,6 @@
 }
 
 .card__addition {
-.card__addition {
   grid-area: description;
   margin: 0;
   font-size: 12px;
@@ -144,7 +143,6 @@
   margin-top: 21px;
 }
 
-@media (min-width: $tablet-width) {
 @media (min-width: $tablet-width) {
   .card {
     min-width: 324px;
@@ -184,7 +182,6 @@
   }
 
   .card__settings {
-  .card__settings {
     justify-self: stretch;
     font-size: 16px;
     line-height: 20px;
@@ -193,13 +190,9 @@
   .card__set {
     padding: 0 0 5px;
     margin-bottom: 6px;
-  .card__set {
-    padding: 0 0 5px;
-    margin-bottom: 6px;
     border-bottom: 1px solid #cdcdcd;
   }
 
-  .card__addition {
   .card__addition {
     margin: 0;
     font-size: 16px;
@@ -247,7 +240,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
 @media (min-width: $desktop-width) {
   .card {
     gap: 12px;

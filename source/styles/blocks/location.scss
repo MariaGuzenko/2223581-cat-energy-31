@@ -37,7 +37,7 @@
   border: none;
 }
 
-.map__yandex {
+.location__yandex {
   border: none;
   width: 100%;
   display: block;
@@ -71,7 +71,7 @@
     background-size: $tablet-width 400px;
   }
 
-  .map__yandex {
+  .location__yandex {
     min-height: 400px;
   }
 }
